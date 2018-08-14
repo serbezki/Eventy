@@ -196,12 +196,25 @@ SWIFT_CLASS("_TtC6Eventy11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImageView;
+@class UILabel;
+@class GMSMapView;
+@class UIButton;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC6Eventy14ViewController")
 @interface ViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified mainPhoto;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateAndTimeLabel;
+@property (nonatomic, weak) IBOutlet GMSMapView * _Null_unspecified mapView;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified userProfilePhoto;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified authorNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified createdAtLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified secondaryPhoto;
 - (void)viewDidLoad;
+- (IBAction)seePhotos:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

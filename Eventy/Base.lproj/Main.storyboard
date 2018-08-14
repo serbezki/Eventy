@@ -63,6 +63,9 @@
                                 <rect key="frame" x="272" y="398" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="See Photos"/>
+                                <connections>
+                                    <action selector="seePhotos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1g4-AX-Knz"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LUP-7K-cjN">
                                 <rect key="frame" x="16" y="451" width="343" height="141"/>
@@ -72,6 +75,17 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="authorNameLabel" destination="Ta0-tw-AvP" id="0X7-3s-vsc"/>
+                        <outlet property="createdAtLabel" destination="asI-WB-GSg" id="3Tt-Ht-Zpf"/>
+                        <outlet property="eventDateAtTimeLabel" destination="aAg-uR-NUK" id="Vfg-vQ-fp1"/>
+                        <outlet property="eventMainPhoto" destination="POG-RB-TP2" id="VSC-DQ-ayx"/>
+                        <outlet property="eventMapView" destination="hxG-qN-bYD" id="nCs-4y-7f5"/>
+                        <outlet property="eventNameLabel" destination="rF1-9H-hP4" id="ZMN-h7-Q9p"/>
+                        <outlet property="secondaryPhoto" destination="LUP-7K-cjN" id="9TL-cc-KE8"/>
+                        <outlet property="seePhotosButton" destination="2aG-VC-amJ" id="eF9-Yq-UvJ"/>
+                        <outlet property="userProfilePhoto" destination="Ybw-kd-zaL" id="IwW-Dn-TQ1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
