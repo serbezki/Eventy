@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "e688484edd08d8d60b3f34c4111f4e06"
+build_time: [1534266979, 723356000]
+inputs:
+  "/Users/Juli/Documents/Swift/Eventy/Eventy/ViewController.swift": [1534266979, 0]
+  "/Users/Juli/Documents/Swift/Eventy/Eventy/AppDelegate.swift": [1534265424, 0]
