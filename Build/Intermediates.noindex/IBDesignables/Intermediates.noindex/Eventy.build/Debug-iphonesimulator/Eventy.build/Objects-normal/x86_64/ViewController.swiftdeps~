@@ -11,6 +11,7 @@ provides-dynamic-lookup:
 - "imagePickerControllerDidCancel"
 - "nameTextField"
 - "photoImageView"
+- "ratingControl"
 - "selectImageFromPhotoLibrary"
 - "setDefaultLabelText"
 - "textFieldDidEndEditing"
@@ -21,6 +22,7 @@ depends-top-level:
 - "Bool"
 - !private "BooleanLiteralType"
 - "CastingPrecedence"
+- "RatingControl"
 - "String"
 - !private "StringLiteralType"
 - "UIButton"
@@ -260,6 +262,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "textFieldShouldReturn"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "RatingControl"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "UIButton"]
 - !private ["So8NSObjectC", "UIImage"]
@@ -283,6 +286,7 @@ depends-member:
 - ["So8NSObjectC", "navigationControllerSupportedInterfaceOrientations"]
 - ["So8NSObjectC", "photoImageView"]
 - !private ["So8NSObjectC", "present"]
+- ["So8NSObjectC", "ratingControl"]
 - !private ["So8NSObjectC", "resignFirstResponder"]
 - ["So8NSObjectC", "selectImageFromPhotoLibrary"]
 - ["So8NSObjectC", "setDefaultLabelText"]
@@ -524,6 +528,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "textFieldShouldReturn"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "RatingControl"]
 - ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "UIButton"]
 - !private ["So11UIResponderC", "UIImage"]
@@ -547,6 +552,7 @@ depends-member:
 - ["So11UIResponderC", "navigationControllerSupportedInterfaceOrientations"]
 - ["So11UIResponderC", "photoImageView"]
 - !private ["So11UIResponderC", "present"]
+- ["So11UIResponderC", "ratingControl"]
 - !private ["So11UIResponderC", "resignFirstResponder"]
 - ["So11UIResponderC", "selectImageFromPhotoLibrary"]
 - ["So11UIResponderC", "setDefaultLabelText"]
@@ -685,6 +691,7 @@ depends-member:
 - !private ["So6UIViewC", "resignFirstResponder"]
 - !private ["So6UIViewC", "text"]
 - ["So16UIViewControllerC", "Bool"]
+- ["So16UIViewControllerC", "RatingControl"]
 - ["So16UIViewControllerC", "String"]
 - ["So16UIViewControllerC", "UIButton"]
 - !private ["So16UIViewControllerC", "UIImage"]
@@ -708,6 +715,7 @@ depends-member:
 - ["So16UIViewControllerC", "navigationControllerSupportedInterfaceOrientations"]
 - ["So16UIViewControllerC", "photoImageView"]
 - !private ["So16UIViewControllerC", "present"]
+- ["So16UIViewControllerC", "ratingControl"]
 - ["So16UIViewControllerC", "selectImageFromPhotoLibrary"]
 - ["So16UIViewControllerC", "setDefaultLabelText"]
 - !private ["So16UIViewControllerC", "sourceType"]
@@ -720,6 +728,7 @@ depends-member:
 - ["So16UIViewControllerC", "textFieldShouldReturn"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["6Eventy14ViewControllerC", "Bool"]
+- ["6Eventy14ViewControllerC", "RatingControl"]
 - ["6Eventy14ViewControllerC", "String"]
 - ["6Eventy14ViewControllerC", "UIButton"]
 - !private ["6Eventy14ViewControllerC", "UIImage"]
@@ -742,6 +751,7 @@ depends-member:
 - ["6Eventy14ViewControllerC", "navigationControllerSupportedInterfaceOrientations"]
 - ["6Eventy14ViewControllerC", "photoImageView"]
 - !private ["6Eventy14ViewControllerC", "present"]
+- ["6Eventy14ViewControllerC", "ratingControl"]
 - ["6Eventy14ViewControllerC", "selectImageFromPhotoLibrary"]
 - ["6Eventy14ViewControllerC", "setDefaultLabelText"]
 - ["6Eventy14ViewControllerC", "textField"]
@@ -893,4 +903,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "58a35b56db23c87dceeb2fdab96d68e6"
+interface-hash: "13953f3d9ea912d9ac781b4a03c70539"
