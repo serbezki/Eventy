@@ -196,25 +196,27 @@ SWIFT_CLASS("_TtC6Eventy11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImageView;
+@class UITextField;
 @class UILabel;
-@class GMSMapView;
+@class UIImageView;
+@class UIImagePickerController;
+@class UITapGestureRecognizer;
 @class UIButton;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC6Eventy14ViewController")
-@interface ViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified mainPhoto;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateAndTimeLabel;
-@property (nonatomic, weak) IBOutlet GMSMapView * _Null_unspecified mapView;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified userProfilePhoto;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified authorNameLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified createdAtLabel;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified secondaryPhoto;
+@interface ViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameTextField;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified eventNameLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified photoImageView;
 - (void)viewDidLoad;
-- (IBAction)seePhotos:(UIButton * _Nonnull)sender;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
+- (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
+- (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
+- (IBAction)selectImageFromPhotoLibrary:(UITapGestureRecognizer * _Nonnull)sender;
+- (IBAction)setDefaultLabelText:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

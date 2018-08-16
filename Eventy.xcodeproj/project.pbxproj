@@ -7,51 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B5027807B29D24969CEF64C /* libPods-Eventy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4608B7232D69EC8C568A173C /* libPods-Eventy.a */; };
-		A32A62E821233FD0003FB7E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A62E721233FD0003FB7E1 /* AppDelegate.swift */; };
-		A32A62EA21233FD1003FB7E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A62E921233FD1003FB7E1 /* ViewController.swift */; };
-		A32A62ED21233FD1003FB7E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32A62EB21233FD1003FB7E1 /* Main.storyboard */; };
-		A32A62EF21233FD6003FB7E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32A62EE21233FD6003FB7E1 /* Assets.xcassets */; };
-		A32A62F221233FD6003FB7E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32A62F021233FD6003FB7E1 /* LaunchScreen.storyboard */; };
-		A32A62FD21233FD6003FB7E1 /* EventyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A62FC21233FD6003FB7E1 /* EventyTests.swift */; };
+		A32A631A2125F136003FB7E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A63192125F136003FB7E1 /* AppDelegate.swift */; };
+		A32A631C2125F136003FB7E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A631B2125F136003FB7E1 /* ViewController.swift */; };
+		A32A631F2125F136003FB7E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32A631D2125F136003FB7E1 /* Main.storyboard */; };
+		A32A63212125F13A003FB7E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32A63202125F13A003FB7E1 /* Assets.xcassets */; };
+		A32A63242125F13A003FB7E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32A63222125F13A003FB7E1 /* LaunchScreen.storyboard */; };
+		A32A632F2125F13A003FB7E1 /* EventyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A632E2125F13A003FB7E1 /* EventyTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A32A62F921233FD6003FB7E1 /* PBXContainerItemProxy */ = {
+		A32A632B2125F13A003FB7E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A32A62DC21233FD0003FB7E1 /* Project object */;
+			containerPortal = A32A630E2125F136003FB7E1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A32A62E321233FD0003FB7E1;
+			remoteGlobalIDString = A32A63152125F136003FB7E1;
 			remoteInfo = Eventy;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1757EA97ECFAAC15DCC0FA82 /* Pods-Eventy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eventy/Pods-Eventy.debug.xcconfig"; sourceTree = "<group>"; };
-		4608B7232D69EC8C568A173C /* libPods-Eventy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Eventy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		88DCDAC7D5C7343D2DDB95A7 /* Pods-Eventy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eventy/Pods-Eventy.release.xcconfig"; sourceTree = "<group>"; };
-		A32A62E421233FD0003FB7E1 /* Eventy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eventy.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A32A62E721233FD0003FB7E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A32A62E921233FD1003FB7E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A32A62EC21233FD1003FB7E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A32A62EE21233FD6003FB7E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A32A62F121233FD6003FB7E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A32A62F321233FD6003FB7E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A32A62F821233FD6003FB7E1 /* EventyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A32A62FC21233FD6003FB7E1 /* EventyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventyTests.swift; sourceTree = "<group>"; };
-		A32A62FE21233FD6003FB7E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A32A63162125F136003FB7E1 /* Eventy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eventy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A32A63192125F136003FB7E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A32A631B2125F136003FB7E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A32A631E2125F136003FB7E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A32A63202125F13A003FB7E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A32A63232125F13A003FB7E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A32A63252125F13A003FB7E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A32A632A2125F13A003FB7E1 /* EventyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A32A632E2125F13A003FB7E1 /* EventyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventyTests.swift; sourceTree = "<group>"; };
+		A32A63302125F13A003FB7E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A32A62E121233FD0003FB7E1 /* Frameworks */ = {
+		A32A63132125F136003FB7E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B5027807B29D24969CEF64C /* libPods-Eventy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A32A62F521233FD6003FB7E1 /* Frameworks */ = {
+		A32A63272125F13A003FB7E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -61,77 +56,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8A5B5CD41F9EF92F724E0293 /* Frameworks */ = {
+		A32A630D2125F136003FB7E1 = {
 			isa = PBXGroup;
 			children = (
-				4608B7232D69EC8C568A173C /* libPods-Eventy.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A32A62DB21233FD0003FB7E1 = {
-			isa = PBXGroup;
-			children = (
-				A32A62E621233FD0003FB7E1 /* Eventy */,
-				A32A62FB21233FD6003FB7E1 /* EventyTests */,
-				A32A62E521233FD0003FB7E1 /* Products */,
-				FD7F6414503E52BC5ECC7C3C /* Pods */,
-				8A5B5CD41F9EF92F724E0293 /* Frameworks */,
+				A32A63182125F136003FB7E1 /* Eventy */,
+				A32A632D2125F13A003FB7E1 /* EventyTests */,
+				A32A63172125F136003FB7E1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A32A62E521233FD0003FB7E1 /* Products */ = {
+		A32A63172125F136003FB7E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A32A62E421233FD0003FB7E1 /* Eventy.app */,
-				A32A62F821233FD6003FB7E1 /* EventyTests.xctest */,
+				A32A63162125F136003FB7E1 /* Eventy.app */,
+				A32A632A2125F13A003FB7E1 /* EventyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A32A62E621233FD0003FB7E1 /* Eventy */ = {
+		A32A63182125F136003FB7E1 /* Eventy */ = {
 			isa = PBXGroup;
 			children = (
-				A32A62E721233FD0003FB7E1 /* AppDelegate.swift */,
-				A32A62E921233FD1003FB7E1 /* ViewController.swift */,
-				A32A62EB21233FD1003FB7E1 /* Main.storyboard */,
-				A32A62EE21233FD6003FB7E1 /* Assets.xcassets */,
-				A32A62F021233FD6003FB7E1 /* LaunchScreen.storyboard */,
-				A32A62F321233FD6003FB7E1 /* Info.plist */,
+				A32A63192125F136003FB7E1 /* AppDelegate.swift */,
+				A32A631B2125F136003FB7E1 /* ViewController.swift */,
+				A32A631D2125F136003FB7E1 /* Main.storyboard */,
+				A32A63202125F13A003FB7E1 /* Assets.xcassets */,
+				A32A63222125F13A003FB7E1 /* LaunchScreen.storyboard */,
+				A32A63252125F13A003FB7E1 /* Info.plist */,
 			);
 			path = Eventy;
 			sourceTree = "<group>";
 		};
-		A32A62FB21233FD6003FB7E1 /* EventyTests */ = {
+		A32A632D2125F13A003FB7E1 /* EventyTests */ = {
 			isa = PBXGroup;
 			children = (
-				A32A62FC21233FD6003FB7E1 /* EventyTests.swift */,
-				A32A62FE21233FD6003FB7E1 /* Info.plist */,
+				A32A632E2125F13A003FB7E1 /* EventyTests.swift */,
+				A32A63302125F13A003FB7E1 /* Info.plist */,
 			);
 			path = EventyTests;
-			sourceTree = "<group>";
-		};
-		FD7F6414503E52BC5ECC7C3C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1757EA97ECFAAC15DCC0FA82 /* Pods-Eventy.debug.xcconfig */,
-				88DCDAC7D5C7343D2DDB95A7 /* Pods-Eventy.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A32A62E321233FD0003FB7E1 /* Eventy */ = {
+		A32A63152125F136003FB7E1 /* Eventy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A32A630121233FD6003FB7E1 /* Build configuration list for PBXNativeTarget "Eventy" */;
+			buildConfigurationList = A32A63332125F13A003FB7E1 /* Build configuration list for PBXNativeTarget "Eventy" */;
 			buildPhases = (
-				4EEF62CB5659615E77380E0A /* [CP] Check Pods Manifest.lock */,
-				A32A62E021233FD0003FB7E1 /* Sources */,
-				A32A62E121233FD0003FB7E1 /* Frameworks */,
-				A32A62E221233FD0003FB7E1 /* Resources */,
-				DD4F015F2614009FBFED7B47 /* [CP] Copy Pods Resources */,
+				A32A63122125F136003FB7E1 /* Sources */,
+				A32A63132125F136003FB7E1 /* Frameworks */,
+				A32A63142125F136003FB7E1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -139,46 +113,46 @@
 			);
 			name = Eventy;
 			productName = Eventy;
-			productReference = A32A62E421233FD0003FB7E1 /* Eventy.app */;
+			productReference = A32A63162125F136003FB7E1 /* Eventy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A32A62F721233FD6003FB7E1 /* EventyTests */ = {
+		A32A63292125F13A003FB7E1 /* EventyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A32A630421233FD6003FB7E1 /* Build configuration list for PBXNativeTarget "EventyTests" */;
+			buildConfigurationList = A32A63362125F13A003FB7E1 /* Build configuration list for PBXNativeTarget "EventyTests" */;
 			buildPhases = (
-				A32A62F421233FD6003FB7E1 /* Sources */,
-				A32A62F521233FD6003FB7E1 /* Frameworks */,
-				A32A62F621233FD6003FB7E1 /* Resources */,
+				A32A63262125F13A003FB7E1 /* Sources */,
+				A32A63272125F13A003FB7E1 /* Frameworks */,
+				A32A63282125F13A003FB7E1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A32A62FA21233FD6003FB7E1 /* PBXTargetDependency */,
+				A32A632C2125F13A003FB7E1 /* PBXTargetDependency */,
 			);
 			name = EventyTests;
 			productName = EventyTests;
-			productReference = A32A62F821233FD6003FB7E1 /* EventyTests.xctest */;
+			productReference = A32A632A2125F13A003FB7E1 /* EventyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A32A62DC21233FD0003FB7E1 /* Project object */ = {
+		A32A630E2125F136003FB7E1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				TargetAttributes = {
-					A32A62E321233FD0003FB7E1 = {
+					A32A63152125F136003FB7E1 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
-					A32A62F721233FD6003FB7E1 = {
+					A32A63292125F13A003FB7E1 = {
 						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = A32A62E321233FD0003FB7E1;
+						TestTargetID = A32A63152125F136003FB7E1;
 					};
 				};
 			};
-			buildConfigurationList = A32A62DF21233FD0003FB7E1 /* Build configuration list for PBXProject "Eventy" */;
+			buildConfigurationList = A32A63112125F136003FB7E1 /* Build configuration list for PBXProject "Eventy" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -186,29 +160,29 @@
 				en,
 				Base,
 			);
-			mainGroup = A32A62DB21233FD0003FB7E1;
-			productRefGroup = A32A62E521233FD0003FB7E1 /* Products */;
+			mainGroup = A32A630D2125F136003FB7E1;
+			productRefGroup = A32A63172125F136003FB7E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A32A62E321233FD0003FB7E1 /* Eventy */,
-				A32A62F721233FD6003FB7E1 /* EventyTests */,
+				A32A63152125F136003FB7E1 /* Eventy */,
+				A32A63292125F13A003FB7E1 /* EventyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A32A62E221233FD0003FB7E1 /* Resources */ = {
+		A32A63142125F136003FB7E1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A32A62F221233FD6003FB7E1 /* LaunchScreen.storyboard in Resources */,
-				A32A62EF21233FD6003FB7E1 /* Assets.xcassets in Resources */,
-				A32A62ED21233FD1003FB7E1 /* Main.storyboard in Resources */,
+				A32A63242125F13A003FB7E1 /* LaunchScreen.storyboard in Resources */,
+				A32A63212125F13A003FB7E1 /* Assets.xcassets in Resources */,
+				A32A631F2125F136003FB7E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A32A62F621233FD6003FB7E1 /* Resources */ = {
+		A32A63282125F13A003FB7E1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -217,88 +191,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		4EEF62CB5659615E77380E0A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Eventy-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DD4F015F2614009FBFED7B47 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Eventy/Pods-Eventy-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
-				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eventy/Pods-Eventy-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		A32A62E021233FD0003FB7E1 /* Sources */ = {
+		A32A63122125F136003FB7E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A32A62EA21233FD1003FB7E1 /* ViewController.swift in Sources */,
-				A32A62E821233FD0003FB7E1 /* AppDelegate.swift in Sources */,
+				A32A631C2125F136003FB7E1 /* ViewController.swift in Sources */,
+				A32A631A2125F136003FB7E1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A32A62F421233FD6003FB7E1 /* Sources */ = {
+		A32A63262125F13A003FB7E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A32A62FD21233FD6003FB7E1 /* EventyTests.swift in Sources */,
+				A32A632F2125F13A003FB7E1 /* EventyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A32A62FA21233FD6003FB7E1 /* PBXTargetDependency */ = {
+		A32A632C2125F13A003FB7E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A32A62E321233FD0003FB7E1 /* Eventy */;
-			targetProxy = A32A62F921233FD6003FB7E1 /* PBXContainerItemProxy */;
+			target = A32A63152125F136003FB7E1 /* Eventy */;
+			targetProxy = A32A632B2125F13A003FB7E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A32A62EB21233FD1003FB7E1 /* Main.storyboard */ = {
+		A32A631D2125F136003FB7E1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A32A62EC21233FD1003FB7E1 /* Base */,
+				A32A631E2125F136003FB7E1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A32A62F021233FD6003FB7E1 /* LaunchScreen.storyboard */ = {
+		A32A63222125F13A003FB7E1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A32A62F121233FD6003FB7E1 /* Base */,
+				A32A63232125F13A003FB7E1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -306,7 +239,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A32A62FF21233FD6003FB7E1 /* Debug */ = {
+		A32A63312125F13A003FB7E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -366,7 +299,7 @@
 			};
 			name = Debug;
 		};
-		A32A630021233FD6003FB7E1 /* Release */ = {
+		A32A63322125F13A003FB7E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -420,9 +353,8 @@
 			};
 			name = Release;
 		};
-		A32A630221233FD6003FB7E1 /* Debug */ = {
+		A32A63342125F13A003FB7E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1757EA97ECFAAC15DCC0FA82 /* Pods-Eventy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,9 +370,8 @@
 			};
 			name = Debug;
 		};
-		A32A630321233FD6003FB7E1 /* Release */ = {
+		A32A63352125F13A003FB7E1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88DCDAC7D5C7343D2DDB95A7 /* Pods-Eventy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -456,7 +387,7 @@
 			};
 			name = Release;
 		};
-		A32A630521233FD6003FB7E1 /* Debug */ = {
+		A32A63372125F13A003FB7E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -476,7 +407,7 @@
 			};
 			name = Debug;
 		};
-		A32A630621233FD6003FB7E1 /* Release */ = {
+		A32A63382125F13A003FB7E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -499,34 +430,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A32A62DF21233FD0003FB7E1 /* Build configuration list for PBXProject "Eventy" */ = {
+		A32A63112125F136003FB7E1 /* Build configuration list for PBXProject "Eventy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A32A62FF21233FD6003FB7E1 /* Debug */,
-				A32A630021233FD6003FB7E1 /* Release */,
+				A32A63312125F13A003FB7E1 /* Debug */,
+				A32A63322125F13A003FB7E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A32A630121233FD6003FB7E1 /* Build configuration list for PBXNativeTarget "Eventy" */ = {
+		A32A63332125F13A003FB7E1 /* Build configuration list for PBXNativeTarget "Eventy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A32A630221233FD6003FB7E1 /* Debug */,
-				A32A630321233FD6003FB7E1 /* Release */,
+				A32A63342125F13A003FB7E1 /* Debug */,
+				A32A63352125F13A003FB7E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A32A630421233FD6003FB7E1 /* Build configuration list for PBXNativeTarget "EventyTests" */ = {
+		A32A63362125F13A003FB7E1 /* Build configuration list for PBXNativeTarget "EventyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A32A630521233FD6003FB7E1 /* Debug */,
-				A32A630621233FD6003FB7E1 /* Release */,
+				A32A63372125F13A003FB7E1 /* Debug */,
+				A32A63382125F13A003FB7E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A32A62DC21233FD0003FB7E1 /* Project object */;
+	rootObject = A32A630E2125F136003FB7E1 /* Project object */;
 }

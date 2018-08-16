@@ -2,12 +2,10 @@
 //  AppDelegate.swift
 //  Eventy
 //
-//  Created by Juli on 14.08.18.
+//  Created by Juli on 16.08.18.
 //
 
 import UIKit
-import GoogleMaps
-import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,10 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        GMSServices.provideAPIKey("AIzaSyDK7snownZmhQBC6Le7anGsw-_CvtTjVSs")
-        GMSPlacesClient.provideAPIKey("AIzaSyDK7snownZmhQBC6Le7anGsw-_CvtTjVSs")
-        
+        // Override point for customization after application launch.
         return true
     }
 
