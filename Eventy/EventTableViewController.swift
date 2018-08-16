@@ -97,6 +97,17 @@ class EventTableViewController: UITableViewController {
     }
     */
     
+    //MARK: Actions
+    @IBAction func unwindToEventList(sender: UIStoryboardSegue){
+        if let sourceViewController = sender.source as? EventViewController, let event = sourceViewController.event {
+            // Add a new event.
+            let newIndexPath = IndexPath(row: events.count, section: 0)
+            
+            events.append(event)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        }
+    }
+    
     //MARK: Private Methods
     private func loadSampleEvents(){
         let photo1 = UIImage(named: "event1")

@@ -1,10 +1,10 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "ViewController"
+- "EventViewController"
 provides-nominal:
-- "6Eventy14ViewControllerC"
+- "6Eventy19EventViewControllerC"
 provides-member:
-- ["6Eventy14ViewControllerC", ""]
+- ["6Eventy19EventViewControllerC", ""]
 provides-dynamic-lookup:
 - "imagePickerController"
 - "imagePickerControllerDidCancel"
@@ -20,6 +20,7 @@ depends-top-level:
 - "Bool"
 - !private "BooleanLiteralType"
 - "CastingPrecedence"
+- "EventViewController"
 - "RatingControl"
 - "String"
 - !private "StringLiteralType"
@@ -33,7 +34,6 @@ depends-top-level:
 - "UITextField"
 - "UITextFieldDelegate"
 - "UIViewController"
-- "ViewController"
 - !private "fatalError"
 depends-member:
 - !private ["s23BidirectionalCollectionP", "init"]
@@ -160,6 +160,37 @@ depends-member:
 - ["s9EquatableP", "textFieldShouldEndEditing"]
 - ["s9EquatableP", "textFieldShouldReturn"]
 - !private ["s9EquatableP", "viewDidLoad"]
+- ["6Eventy19EventViewControllerC", "Bool"]
+- ["6Eventy19EventViewControllerC", "RatingControl"]
+- ["6Eventy19EventViewControllerC", "String"]
+- !private ["6Eventy19EventViewControllerC", "UIImage"]
+- ["6Eventy19EventViewControllerC", "UIImagePickerController"]
+- !private ["6Eventy19EventViewControllerC", "UIImagePickerControllerOriginalImage"]
+- ["6Eventy19EventViewControllerC", "UIImageView"]
+- ["6Eventy19EventViewControllerC", "UITapGestureRecognizer"]
+- ["6Eventy19EventViewControllerC", "UITextField"]
+- ["6Eventy19EventViewControllerC", "deinit"]
+- !private ["6Eventy19EventViewControllerC", "dismiss"]
+- !private ["6Eventy19EventViewControllerC", "fatalError"]
+- ["6Eventy19EventViewControllerC", "imagePickerController"]
+- ["6Eventy19EventViewControllerC", "imagePickerControllerDidCancel"]
+- ["6Eventy19EventViewControllerC", "init"]
+- ["6Eventy19EventViewControllerC", "nameTextField"]
+- ["6Eventy19EventViewControllerC", "navigationController"]
+- ["6Eventy19EventViewControllerC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["6Eventy19EventViewControllerC", "navigationControllerSupportedInterfaceOrientations"]
+- ["6Eventy19EventViewControllerC", "photoImageView"]
+- !private ["6Eventy19EventViewControllerC", "present"]
+- ["6Eventy19EventViewControllerC", "ratingControl"]
+- ["6Eventy19EventViewControllerC", "selectImageFromPhotoLibrary"]
+- ["6Eventy19EventViewControllerC", "textField"]
+- ["6Eventy19EventViewControllerC", "textFieldDidBeginEditing"]
+- ["6Eventy19EventViewControllerC", "textFieldDidEndEditing"]
+- ["6Eventy19EventViewControllerC", "textFieldShouldBeginEditing"]
+- ["6Eventy19EventViewControllerC", "textFieldShouldClear"]
+- ["6Eventy19EventViewControllerC", "textFieldShouldEndEditing"]
+- ["6Eventy19EventViewControllerC", "textFieldShouldReturn"]
+- ["6Eventy19EventViewControllerC", "viewDidLoad"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
@@ -662,37 +693,6 @@ depends-member:
 - ["So16UIViewControllerC", "textFieldShouldEndEditing"]
 - ["So16UIViewControllerC", "textFieldShouldReturn"]
 - ["So16UIViewControllerC", "viewDidLoad"]
-- ["6Eventy14ViewControllerC", "Bool"]
-- ["6Eventy14ViewControllerC", "RatingControl"]
-- ["6Eventy14ViewControllerC", "String"]
-- !private ["6Eventy14ViewControllerC", "UIImage"]
-- ["6Eventy14ViewControllerC", "UIImagePickerController"]
-- !private ["6Eventy14ViewControllerC", "UIImagePickerControllerOriginalImage"]
-- ["6Eventy14ViewControllerC", "UIImageView"]
-- ["6Eventy14ViewControllerC", "UITapGestureRecognizer"]
-- ["6Eventy14ViewControllerC", "UITextField"]
-- ["6Eventy14ViewControllerC", "deinit"]
-- !private ["6Eventy14ViewControllerC", "dismiss"]
-- !private ["6Eventy14ViewControllerC", "fatalError"]
-- ["6Eventy14ViewControllerC", "imagePickerController"]
-- ["6Eventy14ViewControllerC", "imagePickerControllerDidCancel"]
-- ["6Eventy14ViewControllerC", "init"]
-- ["6Eventy14ViewControllerC", "nameTextField"]
-- ["6Eventy14ViewControllerC", "navigationController"]
-- ["6Eventy14ViewControllerC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
-- ["6Eventy14ViewControllerC", "navigationControllerSupportedInterfaceOrientations"]
-- ["6Eventy14ViewControllerC", "photoImageView"]
-- !private ["6Eventy14ViewControllerC", "present"]
-- ["6Eventy14ViewControllerC", "ratingControl"]
-- ["6Eventy14ViewControllerC", "selectImageFromPhotoLibrary"]
-- ["6Eventy14ViewControllerC", "textField"]
-- ["6Eventy14ViewControllerC", "textFieldDidBeginEditing"]
-- ["6Eventy14ViewControllerC", "textFieldDidEndEditing"]
-- ["6Eventy14ViewControllerC", "textFieldShouldBeginEditing"]
-- ["6Eventy14ViewControllerC", "textFieldShouldClear"]
-- ["6Eventy14ViewControllerC", "textFieldShouldEndEditing"]
-- ["6Eventy14ViewControllerC", "textFieldShouldReturn"]
-- ["6Eventy14ViewControllerC", "viewDidLoad"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "image"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "resignFirstResponder"]
@@ -744,6 +744,7 @@ depends-nominal:
 - !private "s10DictionaryV"
 - !private "s9EncodableP"
 - "s9EquatableP"
+- "6Eventy19EventViewControllerC"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
@@ -795,7 +796,6 @@ depends-nominal:
 - "So18UITraitEnvironmentP"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
-- "6Eventy14ViewControllerC"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
@@ -830,4 +830,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "aeeb71918df4c426e341a50f66994b28"
+interface-hash: "4bb5ff8c8906f275e5019e1ef26eaf59"
