@@ -14,6 +14,7 @@
 		A32A63242125F13A003FB7E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32A63222125F13A003FB7E1 /* LaunchScreen.storyboard */; };
 		A32A632F2125F13A003FB7E1 /* EventyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A632E2125F13A003FB7E1 /* EventyTests.swift */; };
 		A32A633A2125FC0E003FB7E1 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A63392125FC0E003FB7E1 /* RatingControl.swift */; };
+		A32A633C212604CE003FB7E1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A633B212604CE003FB7E1 /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		A32A632E2125F13A003FB7E1 /* EventyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventyTests.swift; sourceTree = "<group>"; };
 		A32A63302125F13A003FB7E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A32A63392125FC0E003FB7E1 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		A32A633B212604CE003FB7E1 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				A32A63192125F136003FB7E1 /* AppDelegate.swift */,
 				A32A631B2125F136003FB7E1 /* ViewController.swift */,
+				A32A633B212604CE003FB7E1 /* Event.swift */,
 				A32A63392125FC0E003FB7E1 /* RatingControl.swift */,
 				A32A631D2125F136003FB7E1 /* Main.storyboard */,
 				A32A63202125F13A003FB7E1 /* Assets.xcassets */,
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A32A631C2125F136003FB7E1 /* ViewController.swift in Sources */,
+				A32A633C212604CE003FB7E1 /* Event.swift in Sources */,
 				A32A633A2125FC0E003FB7E1 /* RatingControl.swift in Sources */,
 				A32A631A2125F136003FB7E1 /* AppDelegate.swift in Sources */,
 			);

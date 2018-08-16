@@ -11,8 +11,8 @@ provides-dynamic-lookup:
 - "imagePickerControllerDidCancel"
 - "nameTextField"
 - "photoImageView"
+- "ratingControl"
 - "selectImageFromPhotoLibrary"
-- "setDefaultLabelText"
 - "textFieldDidEndEditing"
 - "textFieldShouldReturn"
 - "viewDidLoad"
@@ -21,9 +21,9 @@ depends-top-level:
 - "Bool"
 - !private "BooleanLiteralType"
 - "CastingPrecedence"
+- "RatingControl"
 - "String"
 - !private "StringLiteralType"
-- "UIButton"
 - !private "UIImage"
 - "UIImagePickerController"
 - "UIImagePickerControllerDelegate"
@@ -260,8 +260,8 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "textFieldShouldReturn"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "RatingControl"]
 - ["So8NSObjectC", "String"]
-- ["So8NSObjectC", "UIButton"]
 - !private ["So8NSObjectC", "UIImage"]
 - ["So8NSObjectC", "UIImagePickerController"]
 - !private ["So8NSObjectC", "UIImagePickerControllerOriginalImage"]
@@ -283,9 +283,9 @@ depends-member:
 - ["So8NSObjectC", "navigationControllerSupportedInterfaceOrientations"]
 - ["So8NSObjectC", "photoImageView"]
 - !private ["So8NSObjectC", "present"]
+- ["So8NSObjectC", "ratingControl"]
 - !private ["So8NSObjectC", "resignFirstResponder"]
 - ["So8NSObjectC", "selectImageFromPhotoLibrary"]
-- ["So8NSObjectC", "setDefaultLabelText"]
 - !private ["So8NSObjectC", "sourceType"]
 - !private ["So8NSObjectC", "text"]
 - ["So8NSObjectC", "textField"]
@@ -524,8 +524,8 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "textFieldShouldReturn"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "RatingControl"]
 - ["So11UIResponderC", "String"]
-- ["So11UIResponderC", "UIButton"]
 - !private ["So11UIResponderC", "UIImage"]
 - ["So11UIResponderC", "UIImagePickerController"]
 - !private ["So11UIResponderC", "UIImagePickerControllerOriginalImage"]
@@ -547,9 +547,9 @@ depends-member:
 - ["So11UIResponderC", "navigationControllerSupportedInterfaceOrientations"]
 - ["So11UIResponderC", "photoImageView"]
 - !private ["So11UIResponderC", "present"]
+- ["So11UIResponderC", "ratingControl"]
 - !private ["So11UIResponderC", "resignFirstResponder"]
 - ["So11UIResponderC", "selectImageFromPhotoLibrary"]
-- ["So11UIResponderC", "setDefaultLabelText"]
 - !private ["So11UIResponderC", "sourceType"]
 - !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "textField"]
@@ -685,8 +685,8 @@ depends-member:
 - !private ["So6UIViewC", "resignFirstResponder"]
 - !private ["So6UIViewC", "text"]
 - ["So16UIViewControllerC", "Bool"]
+- ["So16UIViewControllerC", "RatingControl"]
 - ["So16UIViewControllerC", "String"]
-- ["So16UIViewControllerC", "UIButton"]
 - !private ["So16UIViewControllerC", "UIImage"]
 - ["So16UIViewControllerC", "UIImagePickerController"]
 - !private ["So16UIViewControllerC", "UIImagePickerControllerOriginalImage"]
@@ -708,8 +708,8 @@ depends-member:
 - ["So16UIViewControllerC", "navigationControllerSupportedInterfaceOrientations"]
 - ["So16UIViewControllerC", "photoImageView"]
 - !private ["So16UIViewControllerC", "present"]
+- ["So16UIViewControllerC", "ratingControl"]
 - ["So16UIViewControllerC", "selectImageFromPhotoLibrary"]
-- ["So16UIViewControllerC", "setDefaultLabelText"]
 - !private ["So16UIViewControllerC", "sourceType"]
 - ["So16UIViewControllerC", "textField"]
 - ["So16UIViewControllerC", "textFieldDidBeginEditing"]
@@ -720,8 +720,8 @@ depends-member:
 - ["So16UIViewControllerC", "textFieldShouldReturn"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["6Eventy14ViewControllerC", "Bool"]
+- ["6Eventy14ViewControllerC", "RatingControl"]
 - ["6Eventy14ViewControllerC", "String"]
-- ["6Eventy14ViewControllerC", "UIButton"]
 - !private ["6Eventy14ViewControllerC", "UIImage"]
 - ["6Eventy14ViewControllerC", "UIImagePickerController"]
 - !private ["6Eventy14ViewControllerC", "UIImagePickerControllerOriginalImage"]
@@ -742,8 +742,8 @@ depends-member:
 - ["6Eventy14ViewControllerC", "navigationControllerSupportedInterfaceOrientations"]
 - ["6Eventy14ViewControllerC", "photoImageView"]
 - !private ["6Eventy14ViewControllerC", "present"]
+- ["6Eventy14ViewControllerC", "ratingControl"]
 - ["6Eventy14ViewControllerC", "selectImageFromPhotoLibrary"]
-- ["6Eventy14ViewControllerC", "setDefaultLabelText"]
 - ["6Eventy14ViewControllerC", "textField"]
 - ["6Eventy14ViewControllerC", "textFieldDidBeginEditing"]
 - ["6Eventy14ViewControllerC", "textFieldDidEndEditing"]
@@ -893,4 +893,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "58a35b56db23c87dceeb2fdab96d68e6"
+interface-hash: "99686d91ca1b9f8a95e071ec7092b7ad"
