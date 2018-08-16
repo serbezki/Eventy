@@ -1,0 +1,7 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "374374bc9022cff012aad4de4424b25b"
+build_time: [1534446671, 867331000]
+inputs:
+  "/Users/Juli/Documents/Swift/Eventy/Eventy/ViewController.swift": [1534444353, 0]
+  "/Users/Juli/Documents/Swift/Eventy/Eventy/RatingControl.swift": [1534446671, 0]
+  "/Users/Juli/Documents/Swift/Eventy/Eventy/AppDelegate.swift": [1534441910, 0]

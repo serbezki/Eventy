@@ -164,6 +164,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if __has_feature(modules)
 @import UIKit;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -196,27 +197,37 @@ SWIFT_CLASS("_TtC6Eventy11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSCoder;
+@class UIButton;
+
+SWIFT_CLASS("_TtC6Eventy13RatingControl")
+@interface RatingControl : UIStackView
+@property (nonatomic) CGSize starSize;
+@property (nonatomic) NSInteger starCount;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)ratingButtonTappedWithButton:(UIButton * _Nonnull)button;
+@end
+
 @class UITextField;
 @class UILabel;
 @class UIImageView;
 @class UIImagePickerController;
 @class UITapGestureRecognizer;
-@class UIButton;
 @class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC6Eventy14ViewController")
 @interface ViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameTextField;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified eventNameLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified photoImageView;
+@property (nonatomic, weak) IBOutlet RatingControl * _Null_unspecified ratingControl;
 - (void)viewDidLoad;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
 - (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
 - (IBAction)selectImageFromPhotoLibrary:(UITapGestureRecognizer * _Nonnull)sender;
-- (IBAction)setDefaultLabelText:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
