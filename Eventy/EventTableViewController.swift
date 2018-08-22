@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import os.log
 
 class EventTableViewController: UITableViewController {
     
@@ -14,6 +15,9 @@ class EventTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Use the edit button provided by the table view controller.
+        navigationItem.leftBarButtonItem = editButtonItem
 
         // Load the sample data.
         loadSampleEvents()
@@ -52,25 +56,22 @@ class EventTableViewController: UITableViewController {
         return cell
     }
 
-    /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
 
-    /*
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
+            events.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
 
     /*
     // Override to support rearranging the table view.
@@ -87,24 +88,47 @@ class EventTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        super.prepare(for: segue, sender: sender)
+        
+        switch (segue.identifier ?? ""){
+        case "AddItem":
+            os_log("Adding a new event.", log: OSLog.default, type: .debug)
+        case "ShowDetail":
+            guard let eventDetailViewController = segue.destination as? EventViewController else{
+                fatalError("Unexpected destination: \(segue.destination)")
+            }
+            guard let selectedEventCell = sender as? EventTableViewCell else{
+                fatalError("Unexpected sender: \(String(describing: sender))")
+            }
+            guard let indexPath = tableView.indexPath(for: selectedEventCell) else{
+                fatalError("The selected cell is not being displayed by the table")
+            }
+            let selectedEvent = events[indexPath.row]
+            eventDetailViewController.event = selectedEvent
+        default:
+            fatalError("Unexpected segue identifier: \(String(describing: segue.identifier))")
+        }
     }
-    */
     
     //MARK: Actions
     @IBAction func unwindToEventList(sender: UIStoryboardSegue){
         if let sourceViewController = sender.source as? EventViewController, let event = sourceViewController.event {
-            // Add a new event.
-            let newIndexPath = IndexPath(row: events.count, section: 0)
-            
-            events.append(event)
-            tableView.insertRows(at: [newIndexPath], with: .automatic)
+            if let selectedIndexPath = tableView.indexPathForSelectedRow{
+                // Update an existing event.
+                events[selectedIndexPath.row] = event
+                tableView.reloadRows(at: [selectedIndexPath], with: .none)
+            }
+            else{
+                // Add a new event.
+                let newIndexPath = IndexPath(row: events.count, section: 0)
+                
+                events.append(event)
+                tableView.insertRows(at: [newIndexPath], with: .automatic)
+            }
         }
     }
     
