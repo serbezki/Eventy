@@ -18,9 +18,15 @@ class EventTableViewController: UITableViewController {
         
         // Use the edit button provided by the table view controller.
         navigationItem.leftBarButtonItem = editButtonItem
-
-        // Load the sample data.
-        loadSampleEvents()
+        
+        // Load any saved events, otherwise load sample data.
+        if let savedEvents = loadEvents(){
+            events += savedEvents
+        }
+        else{
+            // Load the sample data.
+            loadSampleEvents()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,6 +73,7 @@ class EventTableViewController: UITableViewController {
         if editingStyle == .delete {
             // Delete the row from the data source
             events.remove(at: indexPath.row)
+            saveEvents()
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -129,6 +136,9 @@ class EventTableViewController: UITableViewController {
                 events.append(event)
                 tableView.insertRows(at: [newIndexPath], with: .automatic)
             }
+            
+            // Save the events.
+            saveEvents()
         }
     }
     
@@ -153,4 +163,19 @@ class EventTableViewController: UITableViewController {
         events += [event1, event2, event3]
     }
 
+    private func saveEvents(){
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(events, toFile: Event.ArchiveURL.path)
+        
+        if isSuccessfulSave{
+            os_log("Events successfully saved", log: OSLog.default, type: .debug)
+        }
+        else{
+            os_log("Failed to save events", log: OSLog.default, type: .error)
+        }
+    }
+    
+    private func loadEvents() -> [Event]?{
+        return NSKeyedUnarchiver.unarchiveObject(withFile: Event.ArchiveURL.path) as? [Event]
+    }
+    
 }

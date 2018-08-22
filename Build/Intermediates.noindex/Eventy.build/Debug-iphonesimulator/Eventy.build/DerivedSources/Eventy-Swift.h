@@ -164,6 +164,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if __has_feature(modules)
 @import UIKit;
+@import ObjectiveC;
 @import Foundation;
 @import CoreGraphics;
 #endif
@@ -198,10 +199,19 @@ SWIFT_CLASS("_TtC6Eventy11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSCoder;
+
+SWIFT_CLASS("_TtC6Eventy5Event")
+@interface Event : NSObject <NSCoding>
+- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
 @class UILabel;
 @class UIImageView;
 @class RatingControl;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC6Eventy18EventTableViewCell")
 @interface EventTableViewCell : UITableViewCell
