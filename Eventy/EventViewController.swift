@@ -13,7 +13,7 @@ class EventViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
     //MARK: Properties
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var photoImageView: UIImageView!
-    @IBOutlet weak var ratingControl: RatingControl!
+    @IBOutlet weak var dateControl: DateControl!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     /*
      This value is either passed by `EventTableViewController` in `prepare(for:sender)` or constructed as part of adding a new event.
@@ -31,7 +31,7 @@ class EventViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
             navigationItem.title = event.name
             nameTextField.text = event.name
             photoImageView.image = event.photo
-            ratingControl.rating = event.rating
+            dateControl.date = event.date
         }
         
         // Enable the Save button only if the text field has a valid Event name.
@@ -102,10 +102,10 @@ class EventViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
         
         let name = nameTextField.text ?? ""
         let photo = photoImageView.image
-        let rating = ratingControl.rating
+        let date = dateControl.date
         
         // Set the event to be passed to EventTableViewController after the unwind segue.
-        event = Event(name: name, photo: photo, rating: rating)
+        event = Event(name: name, photo: photo, date: date)
     }
     
     //MARK: Actions

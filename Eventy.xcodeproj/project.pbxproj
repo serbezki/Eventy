@@ -13,7 +13,7 @@
 		A32A63212125F13A003FB7E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32A63202125F13A003FB7E1 /* Assets.xcassets */; };
 		A32A63242125F13A003FB7E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32A63222125F13A003FB7E1 /* LaunchScreen.storyboard */; };
 		A32A632F2125F13A003FB7E1 /* EventyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A632E2125F13A003FB7E1 /* EventyTests.swift */; };
-		A32A633A2125FC0E003FB7E1 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A63392125FC0E003FB7E1 /* RatingControl.swift */; };
+		A32A633A2125FC0E003FB7E1 /* DateControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A63392125FC0E003FB7E1 /* DateControl.swift */; };
 		A32A633C212604CE003FB7E1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A633B212604CE003FB7E1 /* Event.swift */; };
 		A32A633E2126092A003FB7E1 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A633D2126092A003FB7E1 /* EventTableViewCell.swift */; };
 		A32A634021260E30003FB7E1 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A633F21260E30003FB7E1 /* EventTableViewController.swift */; };
@@ -40,7 +40,7 @@
 		A32A632A2125F13A003FB7E1 /* EventyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32A632E2125F13A003FB7E1 /* EventyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventyTests.swift; sourceTree = "<group>"; };
 		A32A63302125F13A003FB7E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A32A63392125FC0E003FB7E1 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		A32A63392125FC0E003FB7E1 /* DateControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateControl.swift; sourceTree = "<group>"; };
 		A32A633B212604CE003FB7E1 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		A32A633D2126092A003FB7E1 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		A32A633F21260E30003FB7E1 /* EventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 				A32A633B212604CE003FB7E1 /* Event.swift */,
 				A32A633D2126092A003FB7E1 /* EventTableViewCell.swift */,
 				A32A633F21260E30003FB7E1 /* EventTableViewController.swift */,
-				A32A63392125FC0E003FB7E1 /* RatingControl.swift */,
+				A32A63392125FC0E003FB7E1 /* DateControl.swift */,
 				A32A631D2125F136003FB7E1 /* Main.storyboard */,
 				A32A63202125F13A003FB7E1 /* Assets.xcassets */,
 				A32A63222125F13A003FB7E1 /* LaunchScreen.storyboard */,
@@ -210,7 +210,7 @@
 			files = (
 				A32A631C2125F136003FB7E1 /* EventViewController.swift in Sources */,
 				A32A633C212604CE003FB7E1 /* Event.swift in Sources */,
-				A32A633A2125FC0E003FB7E1 /* RatingControl.swift in Sources */,
+				A32A633A2125FC0E003FB7E1 /* DateControl.swift in Sources */,
 				A32A633E2126092A003FB7E1 /* EventTableViewCell.swift in Sources */,
 				A32A634021260E30003FB7E1 /* EventTableViewController.swift in Sources */,
 				A32A631A2125F136003FB7E1 /* AppDelegate.swift in Sources */,

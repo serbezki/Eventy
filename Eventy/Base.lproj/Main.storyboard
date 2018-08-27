@@ -38,16 +38,16 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iA8-yr-Voj" customClass="RatingControl" customModule="Eventy" customModuleProvider="target">
-                                            <rect key="frame" x="98" y="40" width="252" height="44"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AHb-O4-nri" customClass="DateControl" customModule="Eventy" customModuleProvider="target">
+                                            <rect key="frame" x="98" y="40" width="261" height="39"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </stackView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="dateControl" destination="AHb-O4-nri" id="Fs8-mo-a3r"/>
                                     <outlet property="nameLabel" destination="8X3-gC-EBL" id="ajs-XL-C3F"/>
                                     <outlet property="photoImageView" destination="nSQ-P4-xMQ" id="AP9-ob-FuC"/>
-                                    <outlet property="ratingControl" destination="iA8-yr-Voj" id="IwW-LW-Yjm"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="O1l-Jn-n80"/>
                                 </connections>
                             </tableViewCell>
@@ -67,7 +67,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FhV-et-x8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2015" y="-681"/>
+            <point key="canvasLocation" x="2013.5999999999999" y="-681.40929535232385"/>
         </scene>
         <!--New Event-->
         <scene sceneID="tne-QT-ifu">
@@ -78,7 +78,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0WJ-Fh-ukT">
-                                <rect key="frame" x="0.0" y="84" width="375" height="410"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="406"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter event name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SDR-O6-V6c">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
@@ -96,8 +96,8 @@
                                             <outletCollection property="gestureRecognizers" destination="BNT-9K-R9L" appends="YES" id="MlK-Yh-If1"/>
                                         </connections>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WcF-Ev-Fpn" customClass="RatingControl" customModule="Eventy" customModuleProvider="target">
-                                        <rect key="frame" x="61.5" y="366" width="252" height="44"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WcF-Ev-Fpn" customClass="DateControl" customModule="Eventy" customModuleProvider="target">
+                                        <rect key="frame" x="67.5" y="366" width="240" height="40"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -126,6 +126,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="dateControl" destination="WcF-Ev-Fpn" id="ney-ZW-9Zl"/>
                         <outlet property="nameTextField" destination="SDR-O6-V6c" id="tuA-pp-a78"/>
                         <outlet property="photoImageView" destination="uZT-27-lVz" id="Gr2-Vc-2Bq"/>
                         <outlet property="ratingControl" destination="WcF-Ev-Fpn" id="FI6-j5-FFd"/>

@@ -14,28 +14,20 @@ class EventyTests: XCTestCase {
     
     // Confirm that the Event initializer returns an Event object when passed valid parameters.
     func testEventInitializationSucceeds() {
-        // Zero rating.
-        let zeroRatingEvent = Event.init(name: "Zero", photo: nil, rating: 0)
-        XCTAssertNotNil(zeroRatingEvent)
-        
-        // Highest positive rating.
-        let positiveRatingEvent = Event.init(name: "Positive", photo: nil, rating: 5)
-        XCTAssertNotNil(positiveRatingEvent)
+        // All valid arguments.
+        let validEvent = Event.init(name: "Valid", photo: nil, date: "1st of March, 2000")
+        XCTAssertNotNil(validEvent)
     }
     
-    // Confirm that the Event initializer returns nil when passed a negative rating or an empty name.
+    // Confirm that the Event initializer returns nil when passed an empty name or an empty date.
     func testEventInitializationFails() {
-        // Negative rating.
-        let negativeRatingEvent = Event.init(name: "Negative", photo: nil, rating: -1)
-        XCTAssertNil(negativeRatingEvent)
+        // No date.
+        let noDateEvent = Event.init(name: "NoDate", photo: nil, date: "")
+        XCTAssertNil(noDateEvent)
         
-        // Rating exceeds maximum.
-        let largeRatingEvent = Event.init(name: "Large", photo: nil, rating: 6)
-        XCTAssertNil(largeRatingEvent)
-        
-        // Empty string.
-        let emptyStringEvent = Event.init(name: "", photo: nil, rating: 0)
-        XCTAssertNil(emptyStringEvent)
+        // No name.
+        let noNameEvent = Event.init(name: "", photo: nil, date: "22nd of July, 1995")
+        XCTAssertNil(noNameEvent)
     }
     
 }

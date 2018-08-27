@@ -18,7 +18,6 @@ depends-top-level:
 - "CastingPrecedence"
 - "Event"
 - "FileManager"
-- "Int"
 - "NSCoder"
 - "NSCoding"
 - "NSObject"
@@ -27,6 +26,7 @@ depends-top-level:
 - "StringLiteralType"
 - "UIImage"
 - !private "os_log"
+- !private "rating"
 depends-member:
 - ["Sa", "first"]
 - ["s23BidirectionalCollectionP", "first"]
@@ -140,12 +140,12 @@ depends-member:
 - ["6Eventy5EventC", "ArchiveURL"]
 - ["6Eventy5EventC", "DocumentsDirectory"]
 - ["6Eventy5EventC", "FileManager"]
-- ["6Eventy5EventC", "Int"]
 - ["6Eventy5EventC", "NSCoder"]
 - !private ["6Eventy5EventC", "OSLog"]
 - ["6Eventy5EventC", "PropertyKey"]
 - ["6Eventy5EventC", "String"]
 - ["6Eventy5EventC", "UIImage"]
+- ["6Eventy5EventC", "date"]
 - ["6Eventy5EventC", "deinit"]
 - ["6Eventy5EventC", "encode"]
 - ["6Eventy5EventC", "encodeWithCoder"]
@@ -153,7 +153,7 @@ depends-member:
 - ["6Eventy5EventC", "name"]
 - !private ["6Eventy5EventC", "os_log"]
 - ["6Eventy5EventC", "photo"]
-- ["6Eventy5EventC", "rating"]
+- !private ["6Eventy5EventC", "rating"]
 - ["s25ExpressibleByArrayLiteralP", "first"]
 - ["s25ExpressibleByArrayLiteralP", "userDomainMask"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
@@ -214,13 +214,13 @@ depends-member:
 - ["So8NSObjectC", "ArchiveURL"]
 - ["So8NSObjectC", "DocumentsDirectory"]
 - ["So8NSObjectC", "FileManager"]
-- ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "NSCoder"]
 - !private ["So8NSObjectC", "OSLog"]
 - !private ["So8NSObjectC", "PropertyKey"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "UIImage"]
 - ["So8NSObjectC", ""]
+- ["So8NSObjectC", "date"]
 - !private ["So8NSObjectC", "decodeInteger"]
 - !private ["So8NSObjectC", "decodeObject"]
 - !private ["So8NSObjectC", "default"]
@@ -231,7 +231,7 @@ depends-member:
 - ["So8NSObjectC", "name"]
 - !private ["So8NSObjectC", "os_log"]
 - ["So8NSObjectC", "photo"]
-- ["So8NSObjectC", "rating"]
+- !private ["So8NSObjectC", "rating"]
 - ["So8NSObjectC", "urls"]
 - ["So16NSObjectProtocolP", "DocumentsDirectory"]
 - ["So16NSObjectProtocolP", "FileManager"]
@@ -255,10 +255,11 @@ depends-member:
 - !private ["So5OSLogC", "default"]
 - !private ["SC9OSLogTypeV", "debug"]
 - ["s9OptionSetP", "userDomainMask"]
+- ["6Eventy5EventC11PropertyKeyV", "date"]
 - ["6Eventy5EventC11PropertyKeyV", "init"]
 - ["6Eventy5EventC11PropertyKeyV", "name"]
 - ["6Eventy5EventC11PropertyKeyV", "photo"]
-- ["6Eventy5EventC11PropertyKeyV", "rating"]
+- !private ["6Eventy5EventC11PropertyKeyV", "rating"]
 - ["s22RandomAccessCollectionP", "first"]
 - ["s26RangeReplaceableCollectionP", "first"]
 - ["s26RangeReplaceableCollectionP", "init"]
@@ -415,4 +416,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "d35415aa34d6f4c08fca54e538d98694"
+interface-hash: "f06a8a9874fe3648cfbdcf62196a4454"

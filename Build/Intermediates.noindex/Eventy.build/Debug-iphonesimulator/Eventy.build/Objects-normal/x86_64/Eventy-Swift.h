@@ -164,9 +164,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if __has_feature(modules)
 @import UIKit;
+@import CoreGraphics;
 @import ObjectiveC;
 @import Foundation;
-@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -201,6 +201,14 @@ SWIFT_CLASS("_TtC6Eventy11AppDelegate")
 
 @class NSCoder;
 
+SWIFT_CLASS("_TtC6Eventy11DateControl")
+@interface DateControl : UIStackView
+@property (nonatomic) CGSize labelSize;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC6Eventy5Event")
 @interface Event : NSObject <NSCoding>
 - (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
@@ -211,13 +219,12 @@ SWIFT_CLASS("_TtC6Eventy5Event")
 
 @class UILabel;
 @class UIImageView;
-@class RatingControl;
 
 SWIFT_CLASS("_TtC6Eventy18EventTableViewCell")
 @interface EventTableViewCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified photoImageView;
-@property (nonatomic, weak) IBOutlet RatingControl * _Null_unspecified ratingControl;
+@property (nonatomic, weak) IBOutlet DateControl * _Null_unspecified dateControl;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
@@ -253,7 +260,7 @@ SWIFT_CLASS("_TtC6Eventy19EventViewController")
 @interface EventViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameTextField;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified photoImageView;
-@property (nonatomic, weak) IBOutlet RatingControl * _Null_unspecified ratingControl;
+@property (nonatomic, weak) IBOutlet DateControl * _Null_unspecified dateControl;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified saveButton;
 - (void)viewDidLoad;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
@@ -266,17 +273,6 @@ SWIFT_CLASS("_TtC6Eventy19EventViewController")
 - (IBAction)selectImageFromPhotoLibrary:(UITapGestureRecognizer * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UIButton;
-
-SWIFT_CLASS("_TtC6Eventy13RatingControl")
-@interface RatingControl : UIStackView
-@property (nonatomic) CGSize starSize;
-@property (nonatomic) NSInteger starCount;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-- (void)ratingButtonTappedWithButton:(UIButton * _Nonnull)button;
 @end
 
 #if __has_attribute(external_source_symbol)
