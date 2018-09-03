@@ -1,0 +1,618 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ViewEventViewController"
+provides-nominal:
+- "6Eventy09ViewEventB10ControllerC"
+provides-member:
+- ["6Eventy09ViewEventB10ControllerC", ""]
+provides-dynamic-lookup:
+- "addressLabel"
+- "dateLabel"
+- "didReceiveMemoryWarning"
+- "mainImageView"
+- "nameLabel"
+- "prepare"
+- "viewDidLoad"
+- "viewEventPhotos"
+depends-top-level:
+- !private "=="
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "Event"
+- !private "PhotoTableViewController"
+- !private "StringLiteralType"
+- "UIButton"
+- "UIImageView"
+- "UILabel"
+- "UINavigationControllerDelegate"
+- "UIStoryboardSegue"
+- "UIViewController"
+- "ViewEventViewController"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "image"]
+- !private ["So15CALayerDelegateP", "text"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "address"]
+- !private ["s7CVarArgP", "addressLabel"]
+- !private ["s7CVarArgP", "date"]
+- !private ["s7CVarArgP", "dateLabel"]
+- !private ["s7CVarArgP", "destination"]
+- !private ["s7CVarArgP", "didReceiveMemoryWarning"]
+- !private ["s7CVarArgP", "event"]
+- !private ["s7CVarArgP", "identifier"]
+- !private ["s7CVarArgP", "image"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "loadEvent"]
+- !private ["s7CVarArgP", "mainImageView"]
+- !private ["s7CVarArgP", "mainPhoto"]
+- !private ["s7CVarArgP", "name"]
+- !private ["s7CVarArgP", "nameLabel"]
+- ["s7CVarArgP", "navigationController"]
+- ["s7CVarArgP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["s7CVarArgP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["s7CVarArgP", "photos"]
+- !private ["s7CVarArgP", "prepare"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "address"]
+- !private ["s28CustomDebugStringConvertibleP", "addressLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "date"]
+- !private ["s28CustomDebugStringConvertibleP", "dateLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "destination"]
+- !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s28CustomDebugStringConvertibleP", "event"]
+- !private ["s28CustomDebugStringConvertibleP", "identifier"]
+- !private ["s28CustomDebugStringConvertibleP", "image"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "loadEvent"]
+- !private ["s28CustomDebugStringConvertibleP", "mainImageView"]
+- !private ["s28CustomDebugStringConvertibleP", "mainPhoto"]
+- !private ["s28CustomDebugStringConvertibleP", "name"]
+- !private ["s28CustomDebugStringConvertibleP", "nameLabel"]
+- ["s28CustomDebugStringConvertibleP", "navigationController"]
+- ["s28CustomDebugStringConvertibleP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["s28CustomDebugStringConvertibleP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["s28CustomDebugStringConvertibleP", "photos"]
+- !private ["s28CustomDebugStringConvertibleP", "prepare"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "address"]
+- !private ["s23CustomStringConvertibleP", "addressLabel"]
+- !private ["s23CustomStringConvertibleP", "date"]
+- !private ["s23CustomStringConvertibleP", "dateLabel"]
+- !private ["s23CustomStringConvertibleP", "destination"]
+- !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s23CustomStringConvertibleP", "event"]
+- !private ["s23CustomStringConvertibleP", "identifier"]
+- !private ["s23CustomStringConvertibleP", "image"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "loadEvent"]
+- !private ["s23CustomStringConvertibleP", "mainImageView"]
+- !private ["s23CustomStringConvertibleP", "mainPhoto"]
+- !private ["s23CustomStringConvertibleP", "name"]
+- !private ["s23CustomStringConvertibleP", "nameLabel"]
+- ["s23CustomStringConvertibleP", "navigationController"]
+- ["s23CustomStringConvertibleP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["s23CustomStringConvertibleP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["s23CustomStringConvertibleP", "photos"]
+- !private ["s23CustomStringConvertibleP", "prepare"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "address"]
+- !private ["s9EquatableP", "addressLabel"]
+- !private ["s9EquatableP", "date"]
+- !private ["s9EquatableP", "dateLabel"]
+- !private ["s9EquatableP", "destination"]
+- !private ["s9EquatableP", "didReceiveMemoryWarning"]
+- !private ["s9EquatableP", "event"]
+- !private ["s9EquatableP", "identifier"]
+- !private ["s9EquatableP", "image"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "loadEvent"]
+- !private ["s9EquatableP", "mainImageView"]
+- !private ["s9EquatableP", "mainPhoto"]
+- !private ["s9EquatableP", "name"]
+- !private ["s9EquatableP", "nameLabel"]
+- ["s9EquatableP", "navigationController"]
+- ["s9EquatableP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["s9EquatableP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["s9EquatableP", "photos"]
+- !private ["s9EquatableP", "prepare"]
+- !private ["s9EquatableP", "text"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- !private ["6Eventy5EventC", "address"]
+- !private ["6Eventy5EventC", "date"]
+- !private ["6Eventy5EventC", "mainPhoto"]
+- !private ["6Eventy5EventC", "name"]
+- !private ["6Eventy5EventC", "photos"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "address"]
+- !private ["s8HashableP", "addressLabel"]
+- !private ["s8HashableP", "date"]
+- !private ["s8HashableP", "dateLabel"]
+- !private ["s8HashableP", "destination"]
+- !private ["s8HashableP", "didReceiveMemoryWarning"]
+- !private ["s8HashableP", "event"]
+- !private ["s8HashableP", "identifier"]
+- !private ["s8HashableP", "image"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "loadEvent"]
+- !private ["s8HashableP", "mainImageView"]
+- !private ["s8HashableP", "mainPhoto"]
+- !private ["s8HashableP", "name"]
+- !private ["s8HashableP", "nameLabel"]
+- ["s8HashableP", "navigationController"]
+- ["s8HashableP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["s8HashableP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["s8HashableP", "photos"]
+- !private ["s8HashableP", "prepare"]
+- !private ["s8HashableP", "text"]
+- !private ["s8HashableP", "viewDidLoad"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "address"]
+- !private ["So8NSCodingP", "addressLabel"]
+- !private ["So8NSCodingP", "date"]
+- !private ["So8NSCodingP", "dateLabel"]
+- !private ["So8NSCodingP", "didReceiveMemoryWarning"]
+- !private ["So8NSCodingP", "event"]
+- !private ["So8NSCodingP", "image"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "loadEvent"]
+- !private ["So8NSCodingP", "mainImageView"]
+- !private ["So8NSCodingP", "mainPhoto"]
+- !private ["So8NSCodingP", "name"]
+- !private ["So8NSCodingP", "nameLabel"]
+- ["So8NSCodingP", "navigationController"]
+- ["So8NSCodingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So8NSCodingP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So8NSCodingP", "photos"]
+- !private ["So8NSCodingP", "prepare"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "addressLabel"]
+- !private ["So26NSExtensionRequestHandlingP", "dateLabel"]
+- !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
+- !private ["So26NSExtensionRequestHandlingP", "event"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "loadEvent"]
+- !private ["So26NSExtensionRequestHandlingP", "mainImageView"]
+- !private ["So26NSExtensionRequestHandlingP", "nameLabel"]
+- ["So26NSExtensionRequestHandlingP", "navigationController"]
+- ["So26NSExtensionRequestHandlingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So26NSExtensionRequestHandlingP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So26NSExtensionRequestHandlingP", "photos"]
+- !private ["So26NSExtensionRequestHandlingP", "prepare"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So8NSObjectC", "Event"]
+- !private ["So8NSObjectC", "PhotoTableViewController"]
+- ["So8NSObjectC", "UIButton"]
+- ["So8NSObjectC", "UIImageView"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "UIStoryboardSegue"]
+- !private ["So8NSObjectC", "address"]
+- ["So8NSObjectC", "addressLabel"]
+- !private ["So8NSObjectC", "date"]
+- ["So8NSObjectC", "dateLabel"]
+- !private ["So8NSObjectC", "destination"]
+- ["So8NSObjectC", "didReceiveMemoryWarning"]
+- ["So8NSObjectC", "event"]
+- !private ["So8NSObjectC", "identifier"]
+- !private ["So8NSObjectC", "image"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "loadEvent"]
+- ["So8NSObjectC", "mainImageView"]
+- !private ["So8NSObjectC", "mainPhoto"]
+- !private ["So8NSObjectC", "name"]
+- ["So8NSObjectC", "nameLabel"]
+- ["So8NSObjectC", "navigationController"]
+- ["So8NSObjectC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So8NSObjectC", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So8NSObjectC", "photos"]
+- ["So8NSObjectC", "prepare"]
+- !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "viewDidLoad"]
+- ["So8NSObjectC", "viewEventPhotos"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "address"]
+- !private ["So16NSObjectProtocolP", "addressLabel"]
+- !private ["So16NSObjectProtocolP", "date"]
+- !private ["So16NSObjectProtocolP", "dateLabel"]
+- !private ["So16NSObjectProtocolP", "destination"]
+- !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
+- !private ["So16NSObjectProtocolP", "event"]
+- !private ["So16NSObjectProtocolP", "identifier"]
+- !private ["So16NSObjectProtocolP", "image"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "loadEvent"]
+- !private ["So16NSObjectProtocolP", "mainImageView"]
+- !private ["So16NSObjectProtocolP", "mainPhoto"]
+- !private ["So16NSObjectProtocolP", "name"]
+- !private ["So16NSObjectProtocolP", "nameLabel"]
+- ["So16NSObjectProtocolP", "navigationController"]
+- ["So16NSObjectProtocolP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So16NSObjectProtocolP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So16NSObjectProtocolP", "photos"]
+- !private ["So16NSObjectProtocolP", "prepare"]
+- !private ["So16NSObjectProtocolP", "text"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- !private ["6Eventy24PhotoTableViewControllerC", "photos"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s8SequenceP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
+- !private ["So29UIAccessibilityIdentificationP", "image"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So12UIAppearanceP", "image"]
+- !private ["So12UIAppearanceP", "text"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "addressLabel"]
+- !private ["So21UIAppearanceContainerP", "dateLabel"]
+- !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
+- !private ["So21UIAppearanceContainerP", "event"]
+- !private ["So21UIAppearanceContainerP", "image"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "loadEvent"]
+- !private ["So21UIAppearanceContainerP", "mainImageView"]
+- !private ["So21UIAppearanceContainerP", "nameLabel"]
+- ["So21UIAppearanceContainerP", "navigationController"]
+- ["So21UIAppearanceContainerP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So21UIAppearanceContainerP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So21UIAppearanceContainerP", "photos"]
+- !private ["So21UIAppearanceContainerP", "prepare"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "addressLabel"]
+- !private ["So18UIContentContainerP", "dateLabel"]
+- !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
+- !private ["So18UIContentContainerP", "event"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "loadEvent"]
+- !private ["So18UIContentContainerP", "mainImageView"]
+- !private ["So18UIContentContainerP", "nameLabel"]
+- ["So18UIContentContainerP", "navigationController"]
+- ["So18UIContentContainerP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So18UIContentContainerP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So18UIContentContainerP", "photos"]
+- !private ["So18UIContentContainerP", "prepare"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So17UICoordinateSpaceP", "image"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "image"]
+- !private ["So13UIDynamicItemP", "text"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "addressLabel"]
+- !private ["So18UIFocusEnvironmentP", "dateLabel"]
+- !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UIFocusEnvironmentP", "event"]
+- !private ["So18UIFocusEnvironmentP", "image"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "loadEvent"]
+- !private ["So18UIFocusEnvironmentP", "mainImageView"]
+- !private ["So18UIFocusEnvironmentP", "nameLabel"]
+- ["So18UIFocusEnvironmentP", "navigationController"]
+- ["So18UIFocusEnvironmentP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So18UIFocusEnvironmentP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So18UIFocusEnvironmentP", "photos"]
+- !private ["So18UIFocusEnvironmentP", "prepare"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So11UIFocusItemP", "image"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So31UIImagePickerControllerDelegateP", "photos"]
+- !private ["So11UIImageViewC", "image"]
+- !private ["So7UILabelC", "text"]
+- ["So30UINavigationControllerDelegateP", ""]
+- !private ["So30UINavigationControllerDelegateP", "addressLabel"]
+- !private ["So30UINavigationControllerDelegateP", "dateLabel"]
+- !private ["So30UINavigationControllerDelegateP", "event"]
+- !private ["So30UINavigationControllerDelegateP", "loadEvent"]
+- !private ["So30UINavigationControllerDelegateP", "mainImageView"]
+- !private ["So30UINavigationControllerDelegateP", "nameLabel"]
+- ["So30UINavigationControllerDelegateP", "navigationController"]
+- ["So30UINavigationControllerDelegateP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So30UINavigationControllerDelegateP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So30UINavigationControllerDelegateP", "photos"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "addressLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "dateLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
+- !private ["So30UIPasteConfigurationSupportingP", "event"]
+- !private ["So30UIPasteConfigurationSupportingP", "image"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "loadEvent"]
+- !private ["So30UIPasteConfigurationSupportingP", "mainImageView"]
+- !private ["So30UIPasteConfigurationSupportingP", "nameLabel"]
+- ["So30UIPasteConfigurationSupportingP", "navigationController"]
+- ["So30UIPasteConfigurationSupportingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So30UIPasteConfigurationSupportingP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So30UIPasteConfigurationSupportingP", "photos"]
+- !private ["So30UIPasteConfigurationSupportingP", "prepare"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So11UIResponderC", "Event"]
+- !private ["So11UIResponderC", "PhotoTableViewController"]
+- ["So11UIResponderC", "UIButton"]
+- ["So11UIResponderC", "UIImageView"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "UIStoryboardSegue"]
+- ["So11UIResponderC", "addressLabel"]
+- ["So11UIResponderC", "dateLabel"]
+- ["So11UIResponderC", "didReceiveMemoryWarning"]
+- ["So11UIResponderC", "event"]
+- !private ["So11UIResponderC", "image"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "loadEvent"]
+- ["So11UIResponderC", "mainImageView"]
+- ["So11UIResponderC", "nameLabel"]
+- ["So11UIResponderC", "navigationController"]
+- ["So11UIResponderC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So11UIResponderC", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So11UIResponderC", "photos"]
+- ["So11UIResponderC", "prepare"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "viewDidLoad"]
+- ["So11UIResponderC", "viewEventPhotos"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "addressLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "dateLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
+- !private ["So30UIResponderStandardEditActionsP", "event"]
+- !private ["So30UIResponderStandardEditActionsP", "image"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "loadEvent"]
+- !private ["So30UIResponderStandardEditActionsP", "mainImageView"]
+- !private ["So30UIResponderStandardEditActionsP", "nameLabel"]
+- ["So30UIResponderStandardEditActionsP", "navigationController"]
+- ["So30UIResponderStandardEditActionsP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So30UIResponderStandardEditActionsP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So30UIResponderStandardEditActionsP", "photos"]
+- !private ["So30UIResponderStandardEditActionsP", "prepare"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So20UIScrollViewDelegateP", "photos"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "addressLabel"]
+- !private ["So16UIStateRestoringP", "dateLabel"]
+- !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
+- !private ["So16UIStateRestoringP", "event"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "loadEvent"]
+- !private ["So16UIStateRestoringP", "mainImageView"]
+- !private ["So16UIStateRestoringP", "nameLabel"]
+- ["So16UIStateRestoringP", "navigationController"]
+- ["So16UIStateRestoringP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So16UIStateRestoringP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So16UIStateRestoringP", "photos"]
+- !private ["So16UIStateRestoringP", "prepare"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So17UIStoryboardSegueC", "destination"]
+- !private ["So17UIStoryboardSegueC", "identifier"]
+- !private ["So21UITableViewControllerC", "photos"]
+- !private ["So21UITableViewDataSourceP", "photos"]
+- !private ["So19UITableViewDelegateP", "photos"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "addressLabel"]
+- !private ["So18UITraitEnvironmentP", "dateLabel"]
+- !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UITraitEnvironmentP", "event"]
+- !private ["So18UITraitEnvironmentP", "image"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "loadEvent"]
+- !private ["So18UITraitEnvironmentP", "mainImageView"]
+- !private ["So18UITraitEnvironmentP", "nameLabel"]
+- ["So18UITraitEnvironmentP", "navigationController"]
+- ["So18UITraitEnvironmentP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So18UITraitEnvironmentP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So18UITraitEnvironmentP", "photos"]
+- !private ["So18UITraitEnvironmentP", "prepare"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So6UIViewC", "image"]
+- !private ["So6UIViewC", "text"]
+- ["So16UIViewControllerC", "Event"]
+- !private ["So16UIViewControllerC", "PhotoTableViewController"]
+- ["So16UIViewControllerC", "UIButton"]
+- ["So16UIViewControllerC", "UIImageView"]
+- ["So16UIViewControllerC", "UILabel"]
+- ["So16UIViewControllerC", "UIStoryboardSegue"]
+- ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "addressLabel"]
+- ["So16UIViewControllerC", "dateLabel"]
+- ["So16UIViewControllerC", "didReceiveMemoryWarning"]
+- ["So16UIViewControllerC", "event"]
+- ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "loadEvent"]
+- ["So16UIViewControllerC", "mainImageView"]
+- ["So16UIViewControllerC", "nameLabel"]
+- ["So16UIViewControllerC", "navigationController"]
+- ["So16UIViewControllerC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So16UIViewControllerC", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["So16UIViewControllerC", "photos"]
+- ["So16UIViewControllerC", "prepare"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", "viewEventPhotos"]
+- ["6Eventy09ViewEventB10ControllerC", "Event"]
+- !private ["6Eventy09ViewEventB10ControllerC", "PhotoTableViewController"]
+- ["6Eventy09ViewEventB10ControllerC", "UIButton"]
+- ["6Eventy09ViewEventB10ControllerC", "UIImageView"]
+- ["6Eventy09ViewEventB10ControllerC", "UILabel"]
+- ["6Eventy09ViewEventB10ControllerC", "UIStoryboardSegue"]
+- ["6Eventy09ViewEventB10ControllerC", "addressLabel"]
+- ["6Eventy09ViewEventB10ControllerC", "dateLabel"]
+- ["6Eventy09ViewEventB10ControllerC", "deinit"]
+- ["6Eventy09ViewEventB10ControllerC", "didReceiveMemoryWarning"]
+- ["6Eventy09ViewEventB10ControllerC", "event"]
+- ["6Eventy09ViewEventB10ControllerC", "init"]
+- !private ["6Eventy09ViewEventB10ControllerC", "loadEvent"]
+- ["6Eventy09ViewEventB10ControllerC", "mainImageView"]
+- ["6Eventy09ViewEventB10ControllerC", "nameLabel"]
+- ["6Eventy09ViewEventB10ControllerC", "navigationController"]
+- ["6Eventy09ViewEventB10ControllerC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["6Eventy09ViewEventB10ControllerC", "navigationControllerSupportedInterfaceOrientations"]
+- ["6Eventy09ViewEventB10ControllerC", "prepare"]
+- ["6Eventy09ViewEventB10ControllerC", "viewDidLoad"]
+- ["6Eventy09ViewEventB10ControllerC", "viewEventPhotos"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "image"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "address"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addressLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "date"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dateLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "destination"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "event"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "identifier"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "loadEvent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mainImageView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mainPhoto"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "nameLabel"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "photos"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "prepare"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "6Eventy5EventC"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "6Eventy24PhotoTableViewControllerC"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So31UIImagePickerControllerDelegateP"
+- !private "So11UIImageViewC"
+- !private "So7UILabelC"
+- "So30UINavigationControllerDelegateP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So20UIScrollViewDelegateP"
+- "So16UIStateRestoringP"
+- !private "So17UIStoryboardSegueC"
+- !private "So21UITableViewControllerC"
+- !private "So21UITableViewDataSourceP"
+- !private "So19UITableViewDelegateP"
+- "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- "6Eventy09ViewEventB10ControllerC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "052f264abaff4c9b7181adc85c8b2867"

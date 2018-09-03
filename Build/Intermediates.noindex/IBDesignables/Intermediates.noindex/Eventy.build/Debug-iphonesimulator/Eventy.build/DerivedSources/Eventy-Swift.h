@@ -184,6 +184,35 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class UITextField;
+@class UIImageView;
+@class DateControl;
+@class UIBarButtonItem;
+@class UIImagePickerController;
+@class UIStoryboardSegue;
+@class UITapGestureRecognizer;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC6Eventy22AddEventViewController")
+@interface AddEventViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameTextField;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified photoImageView;
+@property (nonatomic, weak) IBOutlet DateControl * _Null_unspecified dateControl;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified saveButton;
+- (void)viewDidLoad;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
+- (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
+- (void)textFieldDidBeginEditing:(UITextField * _Nonnull)textField;
+- (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
+- (IBAction)cancel:(UIBarButtonItem * _Nonnull)sender;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (IBAction)selectImageFromPhotoLibrary:(UITapGestureRecognizer * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIWindow;
 @class UIApplication;
 
@@ -199,7 +228,6 @@ SWIFT_CLASS("_TtC6Eventy11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSCoder;
 
 SWIFT_CLASS("_TtC6Eventy11DateControl")
 @interface DateControl : UIStackView
@@ -218,7 +246,6 @@ SWIFT_CLASS("_TtC6Eventy5Event")
 @end
 
 @class UILabel;
-@class UIImageView;
 
 SWIFT_CLASS("_TtC6Eventy18EventTableViewCell")
 @interface EventTableViewCell : UITableViewCell
@@ -232,8 +259,6 @@ SWIFT_CLASS("_TtC6Eventy18EventTableViewCell")
 @end
 
 @class UITableView;
-@class UIStoryboardSegue;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC6Eventy24EventTableViewController")
 @interface EventTableViewController : UITableViewController
@@ -247,30 +272,6 @@ SWIFT_CLASS("_TtC6Eventy24EventTableViewController")
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (IBAction)unwindToEventListWithSender:(UIStoryboardSegue * _Nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UITextField;
-@class UIBarButtonItem;
-@class UIImagePickerController;
-@class UITapGestureRecognizer;
-
-SWIFT_CLASS("_TtC6Eventy19EventViewController")
-@interface EventViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameTextField;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified photoImageView;
-@property (nonatomic, weak) IBOutlet DateControl * _Null_unspecified dateControl;
-@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified saveButton;
-- (void)viewDidLoad;
-- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
-- (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
-- (void)textFieldDidBeginEditing:(UITextField * _Nonnull)textField;
-- (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
-- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
-- (IBAction)cancel:(UIBarButtonItem * _Nonnull)sender;
-- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
-- (IBAction)selectImageFromPhotoLibrary:(UITapGestureRecognizer * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

@@ -312,7 +312,7 @@ depends-member:
 - !private ["6Eventy5EventC", "ArchiveURL"]
 - !private ["6Eventy5EventC", "date"]
 - !private ["6Eventy5EventC", "deinit"]
-- ["6Eventy5EventC", "init"]
+- !private ["6Eventy5EventC", "init"]
 - !private ["6Eventy5EventC", "name"]
 - !private ["6Eventy5EventC", "photo"]
 - !private ["6Eventy18EventTableViewCellC", "dateControl"]
@@ -1226,7 +1226,7 @@ depends-nominal:
 - "s9DecodableP"
 - "s9EncodableP"
 - "s9EquatableP"
-- "6Eventy5EventC"
+- !private "6Eventy5EventC"
 - !private "6Eventy18EventTableViewCellC"
 - "6Eventy24EventTableViewControllerC"
 - !private "6Eventy19EventViewControllerC"

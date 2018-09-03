@@ -7,9 +7,9 @@ provides-member:
 - ["6Eventy18EventTableViewCellC", ""]
 provides-dynamic-lookup:
 - "awakeFromNib"
+- "dateControl"
 - "nameLabel"
 - "photoImageView"
-- "ratingControl"
 - "setSelected"
 depends-top-level:
 - "Bool"
@@ -44,11 +44,11 @@ depends-member:
 - ["6Eventy18EventTableViewCellC", "UIImageView"]
 - ["6Eventy18EventTableViewCellC", "UILabel"]
 - ["6Eventy18EventTableViewCellC", "awakeFromNib"]
+- ["6Eventy18EventTableViewCellC", "dateControl"]
 - ["6Eventy18EventTableViewCellC", "deinit"]
 - ["6Eventy18EventTableViewCellC", "init"]
 - ["6Eventy18EventTableViewCellC", "nameLabel"]
 - ["6Eventy18EventTableViewCellC", "photoImageView"]
-- ["6Eventy18EventTableViewCellC", "ratingControl"]
 - ["6Eventy18EventTableViewCellC", "setSelected"]
 - ["s8HashableP", ""]
 - !private ["s8HashableP", "awakeFromNib"]
@@ -63,10 +63,10 @@ depends-member:
 - ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "awakeFromNib"]
+- ["So8NSObjectC", "dateControl"]
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "nameLabel"]
 - ["So8NSObjectC", "photoImageView"]
-- ["So8NSObjectC", "ratingControl"]
 - ["So8NSObjectC", "setSelected"]
 - ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "awakeFromNib"]
@@ -113,10 +113,10 @@ depends-member:
 - ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "awakeFromNib"]
+- ["So11UIResponderC", "dateControl"]
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "nameLabel"]
 - ["So11UIResponderC", "photoImageView"]
-- ["So11UIResponderC", "ratingControl"]
 - ["So11UIResponderC", "setSelected"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
@@ -128,10 +128,10 @@ depends-member:
 - ["So15UITableViewCellC", "UILabel"]
 - ["So15UITableViewCellC", ""]
 - ["So15UITableViewCellC", "awakeFromNib"]
+- ["So15UITableViewCellC", "dateControl"]
 - ["So15UITableViewCellC", "init"]
 - ["So15UITableViewCellC", "nameLabel"]
 - ["So15UITableViewCellC", "photoImageView"]
-- ["So15UITableViewCellC", "ratingControl"]
 - ["So15UITableViewCellC", "setSelected"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "awakeFromNib"]
@@ -142,10 +142,10 @@ depends-member:
 - ["So6UIViewC", "UIImageView"]
 - ["So6UIViewC", "UILabel"]
 - ["So6UIViewC", "awakeFromNib"]
+- ["So6UIViewC", "dateControl"]
 - ["So6UIViewC", "init"]
 - ["So6UIViewC", "nameLabel"]
 - ["So6UIViewC", "photoImageView"]
-- ["So6UIViewC", "ratingControl"]
 - ["So6UIViewC", "setSelected"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "awakeFromNib"]
@@ -209,4 +209,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "df9d76f457ef587a6708bfbf4767c1dd"
+interface-hash: "2651a1c928712c3bccea766798019f55"

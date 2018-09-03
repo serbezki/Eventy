@@ -35,7 +35,6 @@ class EventTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -56,8 +55,9 @@ class EventTableViewController: UITableViewController {
         let event = events[indexPath.row]
 
         cell.nameLabel.text = event.name
-        cell.photoImageView.image = event.photo
-        cell.dateControl.date = event.date
+        cell.photoImageView.image = event.mainPhoto
+        cell.dateLabel.text = event.date
+        cell.addressLabel.text = event.address
 
         return cell
     }
@@ -102,10 +102,10 @@ class EventTableViewController: UITableViewController {
         super.prepare(for: segue, sender: sender)
         
         switch (segue.identifier ?? ""){
-        case "AddItem":
+        case "AddEvent":
             os_log("Adding a new event.", log: OSLog.default, type: .debug)
-        case "ShowDetail":
-            guard let eventDetailViewController = segue.destination as? EventViewController else{
+        case "ViewEvent":
+            guard let eventDetailViewController = segue.destination as? ViewEventViewController else{
                 fatalError("Unexpected destination: \(segue.destination)")
             }
             guard let selectedEventCell = sender as? EventTableViewCell else{
@@ -123,7 +123,7 @@ class EventTableViewController: UITableViewController {
     
     //MARK: Actions
     @IBAction func unwindToEventList(sender: UIStoryboardSegue){
-        if let sourceViewController = sender.source as? EventViewController, let event = sourceViewController.event {
+        if let sourceViewController = sender.source as? AddEventViewController, let event = sourceViewController.event {
             if let selectedIndexPath = tableView.indexPathForSelectedRow{
                 // Update an existing event.
                 events[selectedIndexPath.row] = event
@@ -144,19 +144,20 @@ class EventTableViewController: UITableViewController {
     
     //MARK: Private Methods
     private func loadSampleEvents(){
-        let photo1 = UIImage(named: "event1")
-        let photo2 = UIImage(named: "event2")
-        let photo3 = UIImage(named: "event3")
+        let mainPhoto1 = UIImage(named: "event1")
+        let mainPhoto2 = UIImage(named: "event2")
+        let mainPhoto3 = UIImage(named: "event3")
+        let photos = [UIImage?]()
         
-        guard let event1 = Event(name: "Ed Sheeran Concert", photo: photo1, date: "15th of June, 2019") else {
+        guard let event1 = Event(name: "Ed Sheeran Concert", mainPhoto: mainPhoto1, date: "15th of June, 2019", address: "Royal Albert Hall, London, UK", isPrivate: false, photos: photos) else {
             fatalError("Unable to instantiate event1")
         }
         
-        guard let event2 = Event(name: "New Year's Eve Party", photo: photo2, date: "31st of December, 2018") else {
+        guard let event2 = Event(name: "New Year's Eve Party", mainPhoto: mainPhoto2, date: "31st of December, 2018", address: "PM Club, Sofia, Bulgaria", isPrivate: false, photos: photos) else {
             fatalError("Unable to instantiate event2")
         }
         
-        guard let event3 = Event(name: "Stand-up Comedy Night", photo: photo3, date: "31st of August, 2018") else {
+        guard let event3 = Event(name: "Stand-up Comedy Night", mainPhoto: mainPhoto3, date: "31st of August, 2018", address: "Morgan's bar, Sofia, Bulgaria", isPrivate: false, photos: photos) else {
             fatalError("Unable to instantiate event3")
         }
         
